@@ -28,6 +28,20 @@ console.log(typeof patientAge)
 
 const base = 5;
 let height = 8;
-const area  = (base * height);
+const area = (base * height);
 console.log(area);
 const perimeter = 40;
+
+//TERCEIRO EXERCICIO DO BLOCO 4
+
+const notaCandidato = 79;
+
+if (notaCandidato >= 80) {
+  console.log('Parabéns, você foi aprovada(o)!');
+}
+else if (notaCandidato < 80 && notaCandidato >= 60) {
+  console.log('Você está na nossa lista de espera');
+}
+else {
+  console.log('Você foi reprovada(o)');
+}
