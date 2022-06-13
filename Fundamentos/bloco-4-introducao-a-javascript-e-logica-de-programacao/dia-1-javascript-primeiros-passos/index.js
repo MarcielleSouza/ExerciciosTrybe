@@ -45,3 +45,64 @@ else if (notaCandidato < 80 && notaCandidato >= 60) {
 else {
   console.log('Você foi reprovada(o)');
 }
+
+// QUARTO EXERCICIO DO BLOCO 4
+// "OPERADOR AND" 
+
+const currentHour = 7;
+let message = '';
+
+if (currentHour >= 22) {
+  console.log("Não deveríamos comer nada, é hora de dormir");
+}
+else if (currentHour >= 18 && currentHour < 22) {
+  console.log("Rango da noite, vamos jantar :D");
+}
+else if (currentHour >= 14 && currentHour < 18) {
+  console.log("Vamos fazer um bolo pro café da tarde?");
+}
+else if (currentHour > 10 && currentHour < 15) {
+  console.log("Hora do almoço!!!");
+}
+else {
+  console.log("Hmmm, cheiro de café recém passado");
+}
+
+// "OPERADOR OR"
+let weekDay ="Sabado";
+
+if ( weekDay === "Segunda-feira" || weekDay === "Terca-feira") {
+  console.log("Oba, mais um dia de aprendizado na Trybe >:D");
+}
+else if (weekDay === "Quarta-feira" || weekDay === "Quinta-feira") {
+  console.log("Oba, mais um dia de aprendizado na Trybe >:D"); 
+}
+else if (weekDay === "Quinta-feira" || weekDay === "Sexta-feira") {
+  console.log("Oba, mais um dia de aprendizado na Trybe >:D"); 
+}
+else {
+  console.log("FINALMENTE, descanso merecido UwU");
+}
+
+// "OPERADOR NOT"
+console.log((2 + 2) === 4);
+
+//QUINTO EXERCICIO DO BLOCO 4
+
+let pessoaCandidata = "pontuação baixa";
+switch (pessoaCandidata) {
+  case "pontuação alta":
+    console.log("Aprovada");
+    break
+
+  case "pontuação em analise":
+    console.log("Lista");
+    break
+
+  case "pontuação baixa":
+    console.log("Reprovada");
+    break
+
+  default:
+    console.log("não se aplica");
+}
